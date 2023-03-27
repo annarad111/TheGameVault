@@ -1,22 +1,14 @@
-
+import Home from "./pages/home/index.tsx";
+import React from "react";
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   return (
+    <ParallaxProvider>
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home />
     </div>
+    </ParallaxProvider>
   );
 }
 
